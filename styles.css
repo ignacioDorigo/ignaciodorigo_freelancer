@@ -1,0 +1,71 @@
+:root {
+    --color_negro: #000000;
+    --color_blanco: #FFFFFF;
+    --color_primario: #FFC107;
+    --color_secundario: #0097A7;
+    --color_gris: #757575;
+
+    --fuente__principal: "Krub", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--fuente__principal);
+    scroll-behavior: smooth;
+}
+
+body {
+    /* Como el 62.5% de 16 da 10, entonces 1rem = 10px */
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+.titulo span {
+    font-size: 2rem;
+}
+
+.navegacion-bg {
+    background-color: var(--color_secundario);
+}
+
+
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.navegacion-principal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+@media (width>=768px) {
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+.navegacion-principal a {
+    color: var(--color_blanco);
+    font-weight: bold;
+    padding: 1rem 2rem;
+    transition: .3s all ease-in-out;
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--color_primario);
+    color: var(--color_negro);
+}
