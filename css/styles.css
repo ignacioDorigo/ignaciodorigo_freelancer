@@ -190,12 +190,13 @@ h3 {
     align-items: center;
     text-align: center;
 }
-.servicio h3{
+
+.servicio h3 {
     color: var(--color_secundario);
     font-weight: lighter;
 }
 
-.servicio .icono{
+.servicio .icono {
     height: 15rem;
     width: 15rem;
     background-color: var(--color_primario);
@@ -205,6 +206,63 @@ h3 {
     justify-content: center;
 }
 
-.servicio p{
+.servicio p {
     line-height: 1.8;
+}
+
+/* CONTACTO */
+.formulario {
+    border-radius: 5px;
+    background-color: var(--color_gris);
+    padding: 2rem;
+}
+
+fieldset {
+    border: none;
+}
+
+form legend {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color_primario);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.campos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.div_campos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.campo label{
+    font-weight: bold;
+    color: var(--color_blanco);
+    cursor: pointer;
+}
+
+.campo input,.campo textarea{
+    width: 100%;
+    padding: 1rem;
+}
+
+textarea{
+    resize: none;
+}
+
+.formulario .boton{
+    width: 100%;
+    border: none;
 }
