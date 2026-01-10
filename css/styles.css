@@ -292,7 +292,7 @@ form legend {
 .campo input,
 .campo textarea {
     width: 100%;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     border-radius: 0.5rem;
     border: none;
 }
